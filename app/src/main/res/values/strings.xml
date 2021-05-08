@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Edukacine2</string>
+    <string name="prisijungimas">Prisijungimas</string>
+    <string name="prisijungti">Prisijungti</string>
+    <string name="registracija">Registracija</string>
+    <string name="registruotis">Registruotis</string>
+</resources>

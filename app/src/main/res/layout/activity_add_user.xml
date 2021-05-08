@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6FA"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="125dp">
+
+
+        <EditText
+            android:id="@+id/passwordField2"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Pakartokite slaptažodį"
+            android:inputType="textPassword"
+            android:textColorHint="#FF69B4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordField"
+            app:layout_constraintVertical_bias="0.127" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="363dp"
+            android:layout_height="105dp"
+            android:text="Išeiti"
+            android:textColor="#FF1493"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.829"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.904" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Slaptažodis"
+            android:inputType="textPassword"
+            android:textColorHint="#FF69B4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registryTitle"
+            app:layout_constraintVertical_bias="0.134" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="318dp"
+            android:layout_height="162dp"
+            android:text="Kiddo"
+            android:textColor="#FF1493"
+            android:textSize="120sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.126" />
+
+        <TextView
+            android:id="@+id/registryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registracija"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.089"
+            tools:text="Registracija" />
+
+        <EditText
+            android:id="@+id/userNameField"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Prisijungimo vardas"
+            android:inputType="text"
+            android:textColorHint="#FF69B4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.302"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registryTitle"
+            app:layout_constraintVertical_bias="0.134" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="363dp"
+            android:layout_height="105dp"
+            android:background="#90EE90"
+            android:text="@string/registruotis"
+            android:textColor="#FF1493"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.904" />
+
+        <RadioGroup
+            android:id="@+id/typeRadio"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.302"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameField"
+            android:orientation="horizontal"
+            app:layout_constraintVertical_bias="0.127" >
+
+
+            <RadioButton
+                android:id="@+id/teacherRadio"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:text="Auklėtoja"
+                android:textColor="#FF69B4"
+                android:textSize="36sp" />
+
+            <RadioButton
+                android:id="@+id/kidRadio"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Vaikas"
+                android:textColor="#FF69B4"
+                android:textSize="36sp" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="318dp"
+        android:layout_height="162dp"
+        android:text="Kiddo"
+        android:textColor="#FF1493"
+        android:textSize="120sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="624dp"
+        android:layout_height="398dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667">
+
+        <TextView
+            android:id="@+id/usernameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaiko prisijungimo vardas:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/taskIdTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Užduoties ID:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/taskTypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Užduoties tipas:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/taskLevelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Užduoties lygis:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/taskQuantityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klausimų kiekis:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/correctAnsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teisingai atsakytų klausimų kiekis:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/dateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atlikimo data:"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/meniuLoginVw5"
+        android:layout_width="490dp"
+        android:layout_height="79dp"
+        android:text="Rezultatų peržiūra"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/appName12"
+        android:layout_width="335dp"
+        android:layout_height="141dp"
+        android:text="Kiddo"
+        android:textColor="#FF1493"
+        android:textSize="120sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="259dp"
+        android:layout_height="76dp"
+        android:text="Atgal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/skirti"
+        android:layout_width="259dp"
+        android:layout_height="76dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="562dp"
+        android:layout_height="376dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636">
+
+        <TextView
+            android:id="@+id/kidUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/taskid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tasktype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tasklevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/questquant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/correctans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/performdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
